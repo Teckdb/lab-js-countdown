@@ -10,14 +10,6 @@ document.querySelector('#start-btn').onclick = () => {
   startCountdown()
 }
 
-document.querySelector('#close-toast').onclick = () => {
-  console.log("me pulsaste wey")
-  const linkTag = document.querySelector('#toastId')
-  linkTag.classList.remove('show')
-}
-
-
-
 // ITERATION 2: Start Countdown
 function startCountdown() {
   console.log("startCountdown called!");
@@ -67,5 +59,9 @@ function showToast(message) {
   // BONUS: ITERATION 4: TOAST CLOSE BUTTON
 
   // Your code goes here ...
-
+  document.querySelector('#close-toast').onclick = () => {
+    console.log("me pulsaste wey")
+    const linkTag = document.querySelector('#toastId')
+    linkTag.classList.remove('show')
+  }
 }
